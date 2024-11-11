@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,900&family=Rubik+Broken+Fax&display=swap');
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(70, 109, 96);
+        }
+
+      
+.container{
+    position: relative;
+}
+.heading{
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 434px;
+}
+.back{
+    /* display: block; */
+    opacity: .5;
+
+}
+        .time{
+
+            top: 350px;
+
+            left: 100px;
+            position: absolute;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr  1fr;
+            justify-items: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .box{
+            border: none;
+            border-radius: 23px;
+            background-color: rgb(255, 255, 255);
+            width:20vw;
+            height: 20vh;
+
+        }
+        .t1{
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+            font-family: "Poppins", serif;
+        }
+        h1{
+            position: relative;
+            left: 20px;
+            color: rgb(198, 71, 71);
+        }
+        .h{
+            font-size: xx-large;
+            font-weight: bolder;
+            padding: 25px 125px;
+            font-family: "Rubik Broken Fax", system-ui;
+            color: aqua;
+        }
+        .m{
+            font-size: xx-large;
+            font-weight: bolder;
+            padding: 25px 125px;
+            font-family: "Rubik Broken Fax", system-ui;
+            color: aqua;
+
+        }
+        .s{
+            font-size: xx-large;
+            font-weight: bolder;
+            padding: 25px 125px;
+            font-family: "Rubik Broken Fax", system-ui;
+            color: aqua;
+
+        }
+        .date{
+            position: absolute;
+            bottom: 87px;
+            left: 463px;
+            font-size: xx-large;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: yellow;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back">
+    <img src="Screenshot 2024-11-10 151821.png" alt="" width="100%"  height="100%">
+</div>
+    <div class="heading">
+        <h1> <u> DIGITAL CLOCK </u> </h1>
+        <div class="img">
+        <img src="https://img.freepik.com/premium-photo/glitchy-digital-clock-that-shows-wrong-time-date_124507-98564.jpg" alt="clock" width="330px" height="230px" style="opacity: .5;">
+    </div>
+    </div>
+
+
+   
+    <div class="time">
+        <div class="box">
+        <div class="t1">Hours</div>
+        <div class="h"></div>
+    </div>
+        <div class="box">
+        <div class="t1"> Minutes</div>
+        <div class="m"></div>
+    </div>
+        <div class="box">
+        <div class="t1"> Seconds</div>
+        <div class="s"></div>
+    </div>
+    </div>
+    <div class="date">
+
+    </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
